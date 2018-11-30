@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  pyhon3:
+    build: ./python3/
+    container_name: python3
+    volumes:
+      - ~/Project/python/:/usr/src/:rw
+    networks:
+      - python
+  
+networks:
+  python:
